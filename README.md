@@ -2,6 +2,7 @@ Password Validator
 Prosty program w Pythonie służący do sprawdzania poprawności i siły hasła.
 
 Funkcjonalności
+
 Program weryfikuje czy hasło:
 
 nie jest puste,
@@ -18,7 +19,8 @@ Dodatkowo:
 oblicza siłę hasła,
 wyświetla szczegółowe statystyki znaków,
 uruchamia zestaw testów automatycznych.
-Wymagania
+
+Wymagania:
 Python 3.8 lub nowszy
 
 Sprawdzenie wersji:
@@ -29,6 +31,7 @@ Uruchomienie programu
 Uruchom plik:
 
 python password_validator.py
+
 Program poprosi o podanie:
 
 minimalnej długości hasła,
@@ -56,6 +59,7 @@ Wykryto bledy:
 - Haslo musi miec co najmniej 12 znakow
 Hasło poprawne
 Haslo spelnia wszystkie wymagania.
+
 Sila hasla to: Bardzo mocne
 
 Statystyki:
@@ -64,7 +68,9 @@ Male litery: 17
 Wielkie litery: 2
 Cyfry: 4
 Znaki specjalne: 1
+
 Ocena siły hasła
+
 Program przyznaje punkty za spełnienie poniższych kryteriów:
 
 Kryterium	Punkty
@@ -73,19 +79,24 @@ Mała litera	1
 Wielka litera	1
 Cyfra	1
 Znak specjalny	1
+
 Skala oceny
+
 Punkty	Ocena
+
 1	Bardzo słabe
 2	Słabe
 3	Średnie
 4	Mocne
 5	Bardzo mocne
+
 Dozwolone znaki specjalne
 
 Program rozpoznaje następujące znaki specjalne:
 
 ! @ # $ % ^ & *
 Statystyki hasła
+
 Program zlicza:
 
 liczbę wszystkich znaków,
@@ -93,9 +104,11 @@ liczbę małych liter,
 liczbę wielkich liter,
 liczbę cyfr,
 liczbę znaków specjalnych.
+
 Przykład:
 
 Statystyki:
+
 Liczba znakow: 15
 Male litery: 8
 Wielkie litery: 2
@@ -103,6 +116,7 @@ Cyfry: 4
 Znaki specjalne: 1
 
 Testy automatyczne
+
 W programie znajdują się przykładowe przypadki testowe:
 
 Puste hasło
@@ -112,11 +126,13 @@ Brak cyfry
 Brak znaku specjalnego
 Spacje na początku lub końcu
 Poprawne hasło
+
 Po uruchomieniu programu testy są wykonywane automatycznie.
 
 Struktura programu
 
 Funkcja główna
+
 validate_password(password, min_length)
 Zwracane wartości
 is_valid
